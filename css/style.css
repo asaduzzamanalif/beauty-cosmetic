@@ -1,0 +1,502 @@
+/* Import Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bgColorThree);
+}
+
+img {
+    width: 100%;
+    transition: 1s;
+}
+
+
+
+:root {
+    --colorOne: #dc143c;
+    --colorTwo : #fff;
+    --colorThree: #000;
+    --colorFour : #878987;
+    --bgColorOne: #dc143c;
+    --bgColorTwo: #000;
+    --bgColorThree: #f5f5f5;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+nav {
+    background: var(--bgColorTwo);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logoArea {
+    color: var(--colorTwo);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+nav .logoArea a{
+    font-size: 2rem;
+    color: var(--colorTwo);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    display: block;
+}
+
+nav .logoArea a span {
+    color: var(--colorOne);
+}
+
+nav .linkItems {
+    display: flex;
+    gap: 3rem;
+}
+
+nav .linkItems a {
+    color: var(--colorTwo);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+nav .linkItems a:nth-of-type(1) {
+    color: var(--colorOne);
+}
+
+.hotline {
+    background: var(--bgColorOne);
+    padding: 15px 0;
+    text-align: center;
+    color: var(--colorTwo);
+    letter-spacing: .2rem;
+    margin: 110px 0 0 0;
+}
+
+.hotline span {
+    text-transform: uppercase;
+    color: var(--colorThree);
+}
+
+header {
+    height: 70vh;
+    background: url(../images/headerBg.jpg) center center / cover;
+    padding: 50px 0;
+}
+
+header h1,h4,h5 {
+    text-transform: uppercase;
+    color: var(--colorTwo);
+}
+
+header .headerLeftArea {
+    width: 40%;
+}
+
+header h5 {
+    font-size: 2rem;
+    color: var(--colorOne);
+    border-bottom: 2px solid var(--colorOne);
+}
+
+header h1 {
+    color: var(--colorTwo);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+
+}
+
+header h4 {
+    font-size: 2rem;
+}
+
+header p {
+    width: 80%;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+header a {
+    text-transform: uppercase;
+    color: var(--colorOne);
+    border: 2px solid var(--colorOne);
+    padding: 15px 45px;
+    font-weight: 500;
+}
+.counter{
+    margin: 100px 0;
+}
+
+.countContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    background: var(--bgColorOne);
+    border-radius: 30px;
+}
+
+.countContainer h3 {
+    font-size: 5rem;
+    color: var(--colorTwo);
+}
+
+.countContainer p {
+    font-size: 2rem;
+    color: var(--colorTwo);
+    font-weight: 500;
+}
+
+.collection {
+    margin: 0 0 600px 0;
+    padding: 100px 0;
+}
+
+.collection h2 {
+    font-size: 4rem;
+}
+
+.collection .collectionContainer {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.collection .collectionContainer h5 {
+    text-transform: uppercase;
+    color: var(--colorOne);
+    font-size: 1.5rem;
+}
+
+.collection .collectionContainer a {
+    color: var(--colorFour);
+    font-weight: 200;
+    letter-spacing: .1rem;
+}
+
+.aboutUs {
+    height: 70vh;
+    margin: 200px 0;
+    position: relative;
+}
+
+.aboutUs::after,
+.aboutUs::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+}
+
+.aboutUs::after {
+    top: 0;
+    left: 0;
+    background: url(../images/aboutUsBg.jpg) center center / 100%;
+    width: 50%;
+    border-radius: 0 15px 15px 0;
+}
+
+.aboutUs::before {
+	top: -71%;
+	right: 3%;
+	background: url(../images/aboutUsBg2.jpg) center center / 100%;
+	width: 50%;
+	border-radius: 15px 0 0 15px;
+	z-index: 2;
+	transform: scale(1.1);
+}
+
+.aboutUs .aboutUsArea .aboutDocument {
+    width: 50%;
+}
+
+.aboutUs .aboutUsArea {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 7rem;
+
+}
+
+.aboutUs p {
+    margin-bottom: 30px;
+}
+
+.aboutUs .aboutUsArea a {
+    text-transform: uppercase;
+    color: var(--colorThree);
+    border: 2px solid var(--colorThree);
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.aboutUs h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.browseItems h2 {
+    font-size: 4rem;
+}
+
+.cardContainer .topCard,
+.cardContainer .bottomCard {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 40px 0;
+}
+
+.cardContainer .cardImg {
+	width: 100%;
+	height: 350px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.cardContainer h4 {
+    margin: 10px 0;
+    color: var(--colorThree);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.cardContainer .cardPackage {
+	background: #fff;
+	border-radius: 5px;
+	width: 25%;
+	overflow: hidden;
+	padding: 25px;
+	box-shadow: 1px 1px 5px #00000042;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.cardContainer .cardPackage .cardInfo {
+    text-align: justify;
+    margin: 10px 0 20px 0;
+}
+
+.cardContainer .cardPackage .cardBtn {
+    width: 60%;
+    margin: auto;
+}
+
+.cardContainer .cardPackage a {
+    display: inline-block;
+    color: var(--colorThree);
+    border: 2px solid var(--colorThree);
+    padding: 15px 50px;
+}
+
+.contentUs {
+	height: 70vh;
+	margin: 600px 0 400px 0;
+	position: relative;
+}
+.contentUs::after,
+.contentUs::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+}
+
+.contentUs::after {
+    top: 0;
+    right: 0;
+    background: url(../images/aboutUsBg2.jpg) center center / 100%;
+    width: 50%;
+    border-radius: 15px 0 0 15px;
+}
+
+.contentUs::before {
+	top: -50%;
+	left: 0;
+	background: url(../images/aboutUsBg.jpg) center center / 100%;
+	width: 50%;
+	border-radius: 0 15px 15px 0;
+	z-index: 2;
+	transform: scale(1.1);
+}
+
+.contentUs .contentUsArea .contentDocument {
+    width: 50%;
+}
+
+.contentUs .contentUsArea {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 7rem;
+
+}
+
+.contentUs p {
+    margin-bottom: 30px;
+}
+
+.contentUs .contentUsArea a {
+    text-transform: uppercase;
+    color: var(--colorThree);
+    border: 2px solid var(--colorThree);
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.contentUs h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.signUp {
+    margin: 100px 0;
+}
+
+.signUpContainer {
+    height: 250px;
+    background: var(--bgColorOne);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.signUpContainer h3 {
+    color: var(--colorTwo);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.signUpContainer input[type='email'] {
+    padding: 10px;
+    width: 75%;
+    border: 1px solid var(--colorThree);
+    outline: none;
+}
+.signUpContainer input[type='submit'] {
+    padding: 8px 20px;
+    color: var(--colorTwo);
+    background: var(--bgColorTwo);
+    border: 1px solid var(--colorThree);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer {
+    background: var(--bgColorTwo);
+    height: 50vh;
+    color: var(--colorTwo);
+}
+
+footer .footerContainer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .footerInfo h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.footerInfo h3 span {
+    color: var(--colorOne);
+}
+
+.footerInfo p {
+    font-size: 1.5rem;
+}
+
+.footerInfo p:nth-of-type(2) i {
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.footerInfo p:nth-of-type(2) a:nth-of-type(1) {
+    color: #0b85ee;
+}
+.footerInfo p:nth-of-type(2) a:nth-of-type(2) {
+    color: #e00d67;
+}
+
+/*---------------------- Hover Area Start---------------------- */
+
+a,h1,h2,h3,h4,h5,h6,img {
+    transition: 1s;
+}
+
+h1,h3:hover {
+    color: var(--colorOne);
+}
+
+h4,h5,h6:hover {
+    color: var(--colorOne);
+}
+
+h2:hover {
+    color: var(--colorOne);
+}
+
+nav a:hover {
+    color: var(--colorOne);
+}
+
+.collection a:hover {
+    color: var(--colorOne);
+}
+
+.cardContainer .cardPackage:hover {
+    box-shadow: 1px 1px 10px #00000042;
+}
+
+.cardContainer .cardPackage:hover h4 {
+    letter-spacing: .5rem;
+}
+
+.cardContainer .cardPackage img:hover {
+    filter: grayscale(1);
+    transform: scale(1.2);
+}
+
+.cardContainer a:hover {
+    color: var(--colorOne);
+    border: 2px solid var(--colorOne);
+}
+
+
+/*---------------------- Hover Area End---------------------- */
